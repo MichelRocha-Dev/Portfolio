@@ -30,12 +30,11 @@
 }
 
 body.light {
-
-}
+    background: var(--white);}
 
 body {
     background: var(--preto);
-    font-family: 'montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--white);
     padding: 0 10%;
 }
@@ -58,12 +57,13 @@ header .navbar {
 header .logo {
     text-decoration: none;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    font-family: 'Modak', cursive;
     font-size: 35px;
 }
 
 header nav a {
-    text-decoration: none;  
+    text-decoration: none; 
+    font-family: 'modak', cursive; 
     color: var(--white);
     margin-right: 10px;
     font-size: 1.2em;
@@ -81,9 +81,9 @@ header nav a:hover {
   }
 
   .theme-btn {
-    border: 1px solid var(--text);
+    border: 1px solid var(--vermelho);
     background: none;
-    color: var(--text);
+    color: var(--white);
     padding: 6px 12px;
     border-radius: 4px;
     cursor: pointer;
@@ -169,6 +169,7 @@ header nav a:hover {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
+    font-family: 'modak', cursive;
 }
 
 .sobre-img img{
@@ -181,11 +182,12 @@ header nav a:hover {
     padding: 20px;
 }
 
-.sobre-text h3 h4 p {
+.sobre-text h3,
+.sobre-text h4,
+.sobre-text p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: left;
 }
 
@@ -225,6 +227,7 @@ header nav a:hover {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
+    font-family: 'modak', cursive;
 }
 
 .servicos-container {
@@ -251,9 +254,13 @@ header nav a:hover {
 }
 
 .servicos-box:hover {
-    background-color: var(--vermelho);
+    background-color: var(--gray);
     color: var(--white);
     border: 2px solid var(--white);
+}
+
+.servicos-box:hover h3{
+    color: var(--preto);
 }
 
 .servicos-box i {
@@ -301,6 +308,7 @@ header nav a:hover {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
+    font-family: 'modak', cursive;
 }
 
 .skills-container {
@@ -369,6 +377,7 @@ header nav a:hover {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
+    font-family: 'modak', cursive;
 }
 
 .projetos-container {
@@ -439,6 +448,7 @@ header nav a:hover {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
+    font-family: 'modak', cursive;
 }
 
 .contato-container {
@@ -463,6 +473,7 @@ header nav a:hover {
     transition: 0.5s;
     cursor: pointer;    
     width: 400px;
+    height: 200px;
 
 }
 
