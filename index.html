@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio MichelRocha-Dev</title>
 
+    <link rel="shortcut icon" href="/imgs/resume.png" type="image/x-icon">
       <!-- Font Awesome (ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
@@ -16,7 +17,7 @@
 
     <!-- header -->
     <header class="header">
-        <a href="#" class="logo">Portfólio</a>
+        <a href="#" class="logo">Portfolio</a>
 
         <i class="fa fa-bars" id="menu-icon"></i>
 
@@ -26,6 +27,10 @@
             <a href="#servicos">Serviços</a>
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
+            <div class="right">
+                <button class="theme-btn" onclick="toggleTheme()">🌙 Tema</button>
+                <div class="profile-icon"></div>
+              </div>
         </nav>
     </header>
 
@@ -34,41 +39,47 @@
         <div class="home-content">
             <h3>Seja bem-vindo</h3>
             <h1>Eu sou <span>Michel Rocha</span></h1>
-            <p>Desenvolvedor Front End</p>
+            <p>Desenvolvedor Full Stack javascript</p>
             <div class="social-media">
-                <a href="https://www.instagram.com/michelrocha_dev/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/michelrocha-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/MichelRocha-dev" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/michelrocha_dev/" target="_blank"><img src="imgs/instagram (1).png" alt="" class="home-redes"></a>
+                <a href="https://www.linkedin.com/in/michelrocha-dev/" target="_blank"><img src="imgs/linkedin.png" alt="" class="home-redes"></a>
+                <a href="https://github.com/MichelRocha-dev" target="_blank"><img src="imgs/github-sign.png" alt="" class="home-redes"></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="Curriculo-Michel-de-Souza-Reis-Rocha-Comercial.pdf" class="btn" download="Curriculo-Michel-Rocha.pdf">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="img/foto-perfil.jpg" alt="foto-perfil">
+            <img src="/imgs/perfilemoji.png" alt="foto-perfil">
         </div>
     </section>
 
     <!-- sobre section -->
     <section class="sobre" id="sobre">
             <h2>Sobre mim</h2>
-
+            
             <div class="sobre-content">
                 <div class="sobre-img">
-                    <img src="img/foto-perfil.jpg" alt="foto-perfil">
+                    <img src="imgs/Imagem do WhatsApp de 2025-04-13 à(s) 18.58.23_295a037c.jpg" alt="foto-perfil">
                 </div>
-
+                
                 <div class="sobre-text">
                     <h3>Michel Rocha</h3>
                     <h4>Desenvolvedor Full Stack javascript</h4>
                     <p>
                         Sou estudante de Engenharia de Software, curioso por natureza e sempre buscando aprender algo novo. Desde pequeno, sempre fui daquele tipo que queria entender como as coisas funcionam — hoje, essa curiosidade virou código, projetos e soluções que ajudam pessoas no dia a dia.
-                        
-                        Além da faculdade, também me dedico a estudos por fora, focando na prática e no que realmente importa no mercado. Trabalho como desenvolvedor web, criando sites, sistemas e aplicações sob medida, seja em projetos próprios, freelas ou em colaboração com outras pessoas. Gosto de transformar ideias em algo funcional, bonito e que realmente resolva um problema.
-                        
-                        Mas nem tudo é só trabalho. Curto momentos de silêncio, boas conversas e aquele tempo pra pensar e criar com calma. Valorizo conexões reais e ambientes leves, onde dá pra crescer junto, aprender, errar, corrigir e seguir melhor.
-                        
-                        Sou movido por desafios, mas no meu ritmo. Se for pra somar, construir algo legal ou só trocar uma ideia, é só chamar — tô sempre aberto pra novas histórias e projetos.
                     </p>
+                    <p>
+
+                        Além da faculdade, também me dedico a estudos por fora, focando na prática e no que realmente importa no mercado. Trabalho como desenvolvedor web, criando sites, sistemas e aplicações sob medida, seja em projetos próprios, freelas ou em colaboração com outras pessoas. Gosto de transformar ideias em algo funcional, bonito e que realmente resolva um problema.
+                    </p>    
+                    <p>
+
+                        Mas nem tudo é só trabalho. Curto momentos de silêncio, boas conversas e aquele tempo pra pensar e criar com calma. Valorizo conexões reais e ambientes leves, onde dá pra crescer junto, aprender, errar, corrigir e seguir melhor.
+                    </p>    
+                    <p>
+
+                        "Sigo nessa caminhada com os pés no agora e a mente no que ainda posso criar."
+                    </p>    
                 </div>
             </div>
 
@@ -206,6 +217,109 @@
             </div>
         </div>
     </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-box">
+                <img src="imgs/html.png" alt="">
+                <h3>HTML5</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/text.png" alt="">
+                <h3>CSS3</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/js.png" alt="">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/typescript.png" alt="">
+                <h3>TypeScript</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/nodejs.png" alt="">
+                <h3>node.js</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/science.png" alt="">
+                <h3>React</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/icons8-expresso-js-100.png" alt="">
+                <h3>express.js</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/postgresql.png" alt="">
+                <h3>PostgreSQL</h3>
+            </div>
+            <div class="skills-box">
+                <img src="imgs/mysql.png" alt="">
+                <h3>Mysql</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projetos-box">
+                <img src="imgs/10115990_4372937.jpg" alt="projeto1">
+                <div class="projetos-layer">
+                    <h4>Projeto 1</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="projetos-box">
+                <img src="imgs/10115990_4372937.jpg" alt="projeto1">
+                <div class="projetos-layer">
+                    <h4>Projeto 2</h4>
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="projetos-box">
+                <img src="imgs/10115990_4372937.jpg" alt="projeto1">
+                <div class="projetos-layer">
+                    <h4>Projeto 3</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <div class="contato-container">
+            <div class="contato-box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Endereço</h3>
+                <p>Brasil/Bahia/salvador/stiep</p>
+            </div>
+            <div class="contato-box">
+                <i class="fas fa-phone"></i>
+                <h3>Telefone</h3>
+                <p>(71) 98455-0201</p>
+            </div>
+            <div class="contato-box">
+                <i class="fas fa-envelope"></i>
+                <h3>E-mail</h3>
+                <p>michel.souzareisrocha@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Portfólio MichelRocha-Dev. Todos os direitos reservados.</p>
+    </footer>
 
 
 </body>
