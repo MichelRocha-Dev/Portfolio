@@ -18,7 +18,7 @@
     --preto: #141414;
     --light-red: #ff4b57;
     --light-gray: #e5e5e5;
-    --gray: #8c8c8c;
+    --gray-dark: #292929;
     --white: #ffffff;
     --light-black: #0a0a0a
 }
@@ -59,6 +59,7 @@ header .logo {
     color: var(--vermelho);
     font-family: 'Modak', cursive;
     font-size: 35px;
+    letter-spacing: 2px;
 }
 
 header nav a {
@@ -170,6 +171,7 @@ header nav a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     font-family: 'modak', cursive;
+    letter-spacing: 2px;
 }
 
 .sobre-img img{
@@ -228,6 +230,7 @@ header nav a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     font-family: 'modak', cursive;
+    letter-spacing: 2px;
 }
 
 .servicos-container {
@@ -245,7 +248,8 @@ header nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    width: 200px;
+    min-height: 500px;
     padding: 20px;
     border: 2px solid var(--vermelho);
     border-radius: 15px;
@@ -254,7 +258,7 @@ header nav a:hover {
 }
 
 .servicos-box:hover {
-    background-color: var(--gray);
+    background-color: var(--gray-dark) ;
     color: var(--white);
     border: 2px solid var(--white);
 }
@@ -265,14 +269,15 @@ header nav a:hover {
 
 .servicos-box i {
     color: var(--vermelho);
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .servicos-box h3 {
     color: var(--vermelho);
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .servicos-box p {
@@ -280,16 +285,54 @@ header nav a:hover {
     font-size: 1em;
     margin-bottom: 10px;
     text-align: center;
-    max-width: 10em;
+
 }
 
+.servicos-box img {
+    width: 22px;
+    height: 22px;
+}
+
+.servicos-box ul,
+.servicos-box li,
 .servicos-box blockquote {
     color: var(--white);
     font-size: 1em;
     margin-bottom: 10px;
     text-align: center;
-    max-width: 10em;
 }
+
+.servicos-box blockquote {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* Elementos ocultos inicialmente */
+.servicos-box ul,
+.servicos-box blockquote {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+/* Quando ativado */
+.servicos-box.ativa ul,
+.servicos-box.ativa li,
+.servicos-box.ativa blockquote {
+    height: fit-content;
+    opacity: 1;
+    padding: 20; 
+}
+
+.servicos-box.ativa li {
+    font-size: 0.9em;
+}
+
+.servicos-box.ativa  {
+    width: 300px;
+}
+
 
 /* section Skills */
 
@@ -309,6 +352,7 @@ header nav a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     font-family: 'modak', cursive;
+    letter-spacing: 2px;
 }
 
 .skills-container {
@@ -326,7 +370,6 @@ header nav a:hover {
     flex-direction: column;    
     align-items: center;
     justify-content: center;
-    gap: 10px;
     padding: 20px;
     border: 2px solid var(--vermelho);
     border-radius: 15px;
@@ -335,20 +378,20 @@ header nav a:hover {
 }
 
 .skills-box:hover {
-    background-color: var(--gray);
+    background-color: var(--gray-dark) ;
     color: var(--white);
     border: 2px solid var(--white);
 }
 
 .skills-box img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 10px;
 }
 
 .skills-box h3 {
     color: var(--white);
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
@@ -378,6 +421,7 @@ header nav a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     font-family: 'modak', cursive;
+    letter-spacing: 2px;
 }
 
 .projetos-container {
@@ -395,7 +439,6 @@ header nav a:hover {
     flex-direction: column;    
     align-items: center;
     justify-content: center;
-    gap: 10px;
     padding: 20px;
     border: 2px solid var(--vermelho);
     border-radius: 15px;
@@ -404,23 +447,23 @@ header nav a:hover {
 }
 
 .projetos-box:hover {
-    background-color: var(--gray);
+    background-color: var(--gray-dark);
     border: 2px solid var(--white);
     color: var(--preto);
 }
 
 .projetos-box img {
-    width: 100%;
+    width: 50%;
     border-radius: 15px;
     color: var(--vermelho);
-    font-size: 2em;
     margin-bottom: 10px;
 }
 
-.projetos-box h3 {
+.projetos-box h4 {
     color: var(--vermelho);
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .projetos-box p {
@@ -428,7 +471,7 @@ header nav a:hover {
     font-size: 1em;
     margin-bottom: 10px;
     text-align: center;
-    max-width: 10em;
+    max-width: 20em;
 }
 
 /* section Contato */
@@ -449,6 +492,7 @@ header nav a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
     font-family: 'modak', cursive;
+    letter-spacing: 2px;
 }
 
 .contato-container {
@@ -466,7 +510,6 @@ header nav a:hover {
     flex-direction: column;    
     align-items: center;
     justify-content: center;
-    gap: 10px;
     padding: 20px;
     border: 2px solid var(--vermelho);
     border-radius: 15px;
@@ -478,19 +521,19 @@ header nav a:hover {
 }
 
 .contato-box:hover {
-    background-color: var(--gray);
+    background-color: var(--gray-dark);
     color: var(--white);
     border: 2px solid var(--white);
 }
 
 .contato-box i {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .contato-box h3 {
     color: var(--vermelho);
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
@@ -499,7 +542,7 @@ header nav a:hover {
     font-size: 1em;
     margin-bottom: 10px;
     text-align: center;
-    max-width: 10em;
+    min-width: 10em;
 }
 
 /* footer */
